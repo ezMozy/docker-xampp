@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperShorter - Accorcia i tuoi link</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Fredoka One', sans-serif;
+            background: linear-gradient(135deg, #833ab4, #1dcaff);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Elementi decorativi */
+        .circle {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            opacity: 0.7;
+            filter: blur(8px);
+        }
+
+        .circle.small { width: 80px; height: 80px; top: 10%; left: 10%; }
+        .circle.medium { width: 150px; height: 150px; bottom: 10%; right: 15%; }
+        .circle.large { width: 250px; height: 250px; top: 30%; left: 50%; transform: translateX(-50%); }
+
+        .choice-container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 50px 30px;
+            width: 100%;
+            max-width: 500px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 10;
+        }
+
+        .emoji {
+            font-size: 80px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #222;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #444;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            background: linear-gradient(135deg, #FFD700, #FF8C00);
+            color: #000;
+            padding: 14px 30px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            transition: 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        a:hover {
+            background: linear-gradient(135deg, #FF8C00, #FFD700);
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .divider {
+            margin: 25px 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #666;
+        }
+
+        .divider span {
+            padding: 0 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle small"></div>
+    <div class="circle medium"></div>
+    <div class="circle large"></div>
+    
+    <div class="choice-container">
+        <div class="emoji">🔗</div>
+        <h2>SuperCortissimi</h2>
+        <p>Accorcia i tuoi link in un attimo! Trasforma URL lunghi in versioni corte e facili da condividere!</p>
+        <p>Hai già un account?</p>
+        <a href="login.php">Accedi</a>
+        <div class="divider"><span>o</span></div>
+        <p>Non hai un account?</p>
+        <a href="registrazione.php">Registrati</a>
+    </div>
+</body>
+</html>

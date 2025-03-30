@@ -4,7 +4,7 @@ session_start();
 // L'utente è già verificato (login effettuato)
 if (!isset($_SESSION['user'])) {
     header("Location: login.php");
-    exit();
+    exit(); 
 }
 
 require_once 'db.php';

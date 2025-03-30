@@ -7,6 +7,9 @@ rm -rf ./mariadb_run
 mkdir -p ./mariadb_run
 chmod 777 ./mariadb_run
 
+# Modifica i permessi per la creazione di file da php
+chmod -R 777 ./src
+
 # Riavvia i container in background
 docker-compose down || true
 docker-compose up --build -d
